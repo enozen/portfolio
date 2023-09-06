@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap");
+
+.home {
+  font-family: Domine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #18181b;
+}
+
+.welcome {
+  font-size: 50px;
+  color: #fafafa;
+  position: absolute;
+  top: 30%;
+}
+
+.typingText {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fbbf24;
+}
+
+.contactButton {
+  background-color: transparent;
+  border: 2px solid #1d4ed8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: larger;
+  position: absolute;
+  bottom: 25%;
+}
+
+.link{
+  color: #fafafa;
+  text-decoration: none;
+
+}
+
+.contactButton:hover {
+  background-color: #1e40af;
+  color: #fafafa;
+}
+
+

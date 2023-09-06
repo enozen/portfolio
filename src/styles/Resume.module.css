@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resume {
+  background-color: rgb(27, 25, 25);
+  font-family: Merriweather;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resumeTitle {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+  color: #fafafa;
+}
+.title {
+  text-align: center;
+  font-size: 25px;
+  color: #fafafa;
+}
+
+.mySkills,
+.education {
+  flex: 0 0 47%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+.timeline {
+  align-items: center;
+  padding: 30px 15px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+
+.timelineItem::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #1d4ed8;
+}
+
+.circleDot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #1d4ed8;
+}
+
+.timelineDate {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #6b7280;
+}
+
+.timelineDate .fa {
+  margin-right: 5px;
+}
+
+.timelineTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #fafafa;
+}
+
+.timelineText {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  color: #9ca3af;
+}
+
+.downloadCertificate,
+.downloadCv {
+  background-color: #1f2937;
+  color: #9ca3af;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #9ca3af;
+}
+
+.downloadCertificate:hover,
+.downloadCv:hover {
+  background-color: #4b5563;
+}
+
+.downloadCv {
+  margin: 40px 100px;
+}
+
+/* SKILLS */
+
+.skills {
+  flex: 0 0 40%;
+  max-width: 65%;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.skillItem {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.skillsTitle {
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+
+.progress {
+  background-color: #fafafa;
+  height: 10px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.progressIn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #1d4ed8;
+}
+
+.skillPercent {
+  position: absolute;
+  right: 0;
+  color: white;
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
+}

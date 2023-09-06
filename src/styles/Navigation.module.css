@@ -1,0 +1,78 @@
+.header {
+  font-family: Bentham;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #09090b;
+  color: #fafafa;
+  padding: 70px;
+  min-height: 100vh;
+  width: 22%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.profileImage {
+  outline: 10px solid #2563eb;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.headerIcons {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+}
+
+.headerIcons li {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.headerIcons li a {
+  text-decoration: none;
+  color: #f8fafc;
+}
+
+.headerIcons li a:hover {
+  color: #2563eb;
+}
+
+.container {
+  font-family: Betham;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.container li {
+  margin-bottom: 10px;
+  list-style: none;
+  transition: font-size 0.3s;
+}
+
+.container li:hover {
+  transform: scale(1.2);
+}
+
+.container li a {
+  font-size: 23px;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.container li a:hover {
+  color: #2563eb;
+}
+
+.container li a.active {
+  color: #2563eb;
+}

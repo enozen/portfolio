@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projectsContent {
+  background-color: #18181b;
+  font-family: Merriweather;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.projectsTitle {
+  color: #fafafa;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+  color: #fafafa;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 100vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cardsContent {
+  flex: 0 0 calc(30% -20px);
+  background-color: #0b212d;
+  width: 380px;
+ height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #4d7c0f;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cardsContent img {
+  position: a;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.links {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.links a {
+  background-color: #082f49;
+  border: 1px solid #fafafa;
+  border-radius: 50%;
+  padding: 9px;
+  margin-left: 5px;
+}
+
+.cardTitel {
+  color: #fafafa;
+  margin: 20px;
+}
+.text {
+  color: #94a3b8;
+  font-size: 15px;
+  text-align: center;
+}
+
+.languagesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: last baseline;
+
+  width: 100%;
+  margin-top: auto;
+}
+
+.languages {
+  background-color: #164259;
+  padding: 7px 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.html {
+  color: #f97316;
+}
+
+.css {
+  color: #3b82f6;
+}
+
+.bootstrap {
+  color: #9333ea;
+}
+
+.javascript {
+  color: #eab308;
+}
+
+.react {
+  color: #38bdf8;
+}
