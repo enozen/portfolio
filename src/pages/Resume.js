@@ -74,7 +74,7 @@ const Resume = () => {
                   2022-2023
                 </h3>
                 <h4 className={styles.timelineTitle}>
-                  Further training towards web development
+                  Advanced Training in Web Development
                 </h4>
                 <p className={styles.timelineText}>
                   In the DCI course, I got my first lessons on Web development.

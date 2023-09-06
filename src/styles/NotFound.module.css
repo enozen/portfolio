@@ -1,5 +1,5 @@
 .NotFound {
-  background-color: #075985;
+  background-color: #1e1b4b;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -16,4 +16,14 @@
 .notFoundText{
     margin-top: 30px;
     font-size: 35px;
+    color: #ea580c;
+}
+
+.goBackButton{
+  margin-top: 40px;
+  background-color: #3b82f6;
+  color: #fafafa;
+  font-size: 25px;
+  padding: 14px 12px;
+  border-radius: 10px;
 }

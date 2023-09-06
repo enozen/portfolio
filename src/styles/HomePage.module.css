@@ -31,15 +31,14 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  font-size: larger;
+  font-size: 25px;
   position: absolute;
   bottom: 25%;
 }
 
-.link{
+.link {
   color: #fafafa;
   text-decoration: none;
-
 }
 
 .contactButton:hover {
@@ -47,4 +46,98 @@
   color: #fafafa;
 }
 
+@media (max-width: 420px) {
+  .home {
+    font-family: Domine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #18181b;
+  }
 
+  .welcome {
+    font-size: 16.6px;
+    color: #fafafa;
+    position: absolute;
+    top: 30%;
+  }
+
+  .typingText {
+    font-size: 13.3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fbbf24;
+  }
+
+  .contactButton {
+    background-color: transparent;
+    border: 1px solid #1d4ed8;
+    padding: 3.3px 6.6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 8.3px;
+    position: absolute;
+    bottom: 25%;
+  }
+
+  .link {
+    color: #fafafa;
+    text-decoration: none;
+  }
+
+  .contactButton:hover {
+    background-color: #1e40af;
+    color: #fafafa;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px){
+  .home {
+    font-family: Domine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #18181b;
+  }
+  
+  .welcome {
+    font-size: 33.3px;
+    color: #fafafa;
+    position: absolute;
+    top: 30%;
+  }
+  
+  .typingText {
+    font-size: 26.6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fbbf24;
+  }
+  
+  .contactButton {
+    background-color: transparent;
+    border: 2px solid #1d4ed8;
+    padding: 6.6px 13.3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16.6px;
+    position: absolute;
+    bottom: 25%;
+  }
+  
+  .link {
+    color: #fafafa;
+    text-decoration: none;
+  }
+  
+  .contactButton:hover {
+    background-color: #1e40af;
+    color: #fafafa;
+  }
+}

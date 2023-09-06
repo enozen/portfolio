@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import fileSaver from "file-saver";
 import styles from "../styles/AboutMe.module.css";
 import gif from "../assets/PHP-Developers.gif";
 import AOS from "aos";
@@ -12,6 +12,12 @@ const AboutMe = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  const saver = () => {
+    fileSaver.saveAs(
+      process.env.PUBLIC_URL + "/f.pdf",
+      "Lebenslauf.pdf"
+    );
+  };
   return (
     <div className={styles.about}>
       <h1 className={styles.header} data-aos="slide-down">
@@ -46,14 +52,11 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.gifContainer} data-aos="slide-left">
-          <img src={gif} alt="Developer-Gif" width="400" />
-          <button className={styles.downloadCv}>
+          <img src={gif} alt="Developer-Gif" className={styles.img} />
+          <button className={styles.downloadCv} onClick={saver}>
             Download CV
             <FontAwesomeIcon icon={faDownload} />
           </button>
-          <a href="../assets/Cityloads-kundigung.pdf" download="Lebenslauf.pdf">
-            Click me
-          </a>
         </div>
       </div>
     </div>

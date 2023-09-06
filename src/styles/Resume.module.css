@@ -14,7 +14,6 @@
   overflow: hidden;
 }
 
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -35,7 +34,7 @@
 .mySkills,
 .education {
   flex: 0 0 47%;
-  max-width: 50%;
+  /* max-width: 50%; */
   margin-top: 30px;
 }
 
@@ -127,16 +126,13 @@
 /* SKILLS */
 
 .skills {
-  flex: 0 0 40%;
+ 
   max-width: 65%;
   margin-top: 20px;
   margin-left: 15%;
 }
 
-.skillItem {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
+
 
 .skillsTitle {
   line-height: 40px;
@@ -170,4 +166,174 @@
   top: -40px;
   font-weight: 400;
   line-height: 40px;
+}
+
+@media (max-width: 420px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .resume {
+    background-color: rgb(27, 25, 25);
+    font-family: Merriweather;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow: hidden;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resumeTitle {
+    text-align: center;
+    font-size: 13.3px;
+    padding: 10px;
+    color: #fafafa;
+  }
+  .title {
+    text-align: center;
+    font-size: 8.3px;
+    color: #fafafa;
+  }
+  
+  .mySkills,
+  .education {
+    flex: 0 0 47%;
+    /* max-width: 50%; */
+    margin-top: 10px;
+  }
+  
+  .timeline {
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 3.3px;
+    position: relative;
+    margin-left: 6.6px;
+  }
+  
+  .timelineItem {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 16.6px;
+  }
+  
+  .timelineItem:last-child {
+    padding-bottom: 0;
+  }
+  
+  .timelineItem::before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 2.3px;
+    top: 0;
+    background-color: #1d4ed8;
+  }
+  
+  .circleDot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #1d4ed8;
+  }
+  
+  .timelineDate {
+    font-weight: 400;
+    font-size: 5px;
+    margin-bottom: 4px;
+    color: #6b7280;
+  }
+  
+  .timelineDate .fa {
+    margin-right: 1.6px;
+  }
+  
+  .timelineTitle {
+    font-weight: 700;
+    font-size: 6px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #fafafa;
+  }
+  
+  .timelineText {
+    line-height: 8.3px;
+    font-size: 5.3px;
+    text-align: justify;
+    color: #9ca3af;
+  }
+  
+  .downloadCertificate,
+  .downloadCv {
+    background-color: #1f2937;
+    color: #9ca3af;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid #9ca3af;
+  }
+  
+  .downloadCertificate:hover,
+  .downloadCv:hover {
+    background-color: #4b5563;
+  }
+  
+  .downloadCv {
+    margin: 40px 100px;
+  }
+  
+  /* SKILLS */
+  
+  .skills {
+   
+    max-width: 65%;
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+  
+  
+  
+  .skillsTitle {
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fafafa;
+    text-transform: uppercase;
+  }
+  
+  .progress {
+    background-color: #fafafa;
+    height: 10px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .progressIn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #1d4ed8;
+  }
+  
+  .skillPercent {
+    position: absolute;
+    right: 0;
+    color: white;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+  }
 }
