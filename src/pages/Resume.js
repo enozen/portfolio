@@ -96,7 +96,7 @@ const Resume = () => {
                   Javascrip, React and Node.js. During the one-year course, we
                   did daily exercises and created small projects.
                 </p>
-                <button className={styles.downloadCertificate} disabled>
+                <button className={styles.downloadCertificate} dia>
                   <FontAwesomeIcon icon={faFileArrowDown} /> Download
                   Certificate
                 </button>
@@ -180,14 +180,14 @@ const Resume = () => {
                   ></div>
                   <div className={styles.skillPercent}>65%</div>
                 </div>
+                <button className={styles.downloadCv} onClick={downloadCv}>
+                  Download CV <FontAwesomeIcon icon={faDownload} />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button className={styles.downloadCv} onClick={downloadCv}>
-        Download CV <FontAwesomeIcon icon={faDownload} />
-      </button>
     </section>
   );
 };
