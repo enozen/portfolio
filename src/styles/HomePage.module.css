@@ -58,27 +58,28 @@
   }
 
   .welcome {
-    font-size: 16.6px;
+    font-size: 30px;
     color: #fafafa;
     position: absolute;
     top: 30%;
   }
 
   .typingText {
-    font-size: 13.3px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
     color: #fbbf24;
   }
 
   .contactButton {
+    
     background-color: transparent;
     border: 1px solid #1d4ed8;
-    padding: 3.3px 6.6px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 8.3px;
+    font-size: 17px;
     position: absolute;
     bottom: 25%;
   }
@@ -106,7 +107,7 @@
   }
   
   .welcome {
-    font-size: 33.3px;
+    font-size: 50px;
     color: #fafafa;
     position: absolute;
     top: 30%;

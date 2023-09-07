@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   const saver = () => {
     fileSaver.saveAs(
-      process.env.PUBLIC_URL + "/f.pdf",
+      process.env.PUBLIC_URL + "/Hendri-Zeneli-CV.pdf",
       "Lebenslauf.pdf"
     );
   };

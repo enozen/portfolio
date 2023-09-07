@@ -8,11 +8,22 @@ import {
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import FileSaver from "file-saver";
 
 const Resume = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const downloadCv = () => {
+    FileSaver.saveAs(
+      process.env.PUBLIC_URL + "/Hendri-Zeneli-CV.pdf",
+      "Lebenslauf.pdf"
+    );
+  };
+  const downloadCertificate = () => {
+    FileSaver.saveAs(process.env.PUBLIC_URL + "/Diploma.jpg", "Certificate");
+  };
   return (
     <section className={styles.resume}>
       <h1 className={styles.resumeTitle} data-aos={"slide-down"}>
@@ -38,7 +49,10 @@ const Resume = () => {
                   This is where I had my first contact with programming. I also
                   gained knowledge on computer networks, operating systems, etc.
                 </p>
-                <button className={styles.downloadCertificate}>
+                <button
+                  className={styles.downloadCertificate}
+                  onClick={downloadCertificate}
+                >
                   <FontAwesomeIcon icon={faFileArrowDown} /> Download
                   Certificate
                 </button>
@@ -82,7 +96,7 @@ const Resume = () => {
                   Javascrip, React and Node.js. During the one-year course, we
                   did daily exercises and created small projects.
                 </p>
-                <button className={styles.downloadCertificate}>
+                <button className={styles.downloadCertificate} disabled>
                   <FontAwesomeIcon icon={faFileArrowDown} /> Download
                   Certificate
                 </button>
@@ -166,14 +180,14 @@ const Resume = () => {
                   ></div>
                   <div className={styles.skillPercent}>65%</div>
                 </div>
-                <button className={styles.downloadCv}>
-                  Download CV <FontAwesomeIcon icon={faDownload} />
-                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button className={styles.downloadCv} onClick={downloadCv}>
+        Download CV <FontAwesomeIcon icon={faDownload} />
+      </button>
     </section>
   );
 };

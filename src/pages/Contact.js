@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
         <div className={styles.gifContainer}>
           <div className={styles.gifWrapper} data-aos={"fade-left"}>
-            <img src={gif} alt="Contact-Gif" width="380" />
+            <img src={gif} alt="Contact-Gif"  />
           </div>
           <div className={styles.followMeContainer} data-aos={"slide-up"}>
             <h3 id={styles.followMe}>follow me</h3>

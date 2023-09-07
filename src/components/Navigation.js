@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "../styles/Navigation.module.css";
-import ProfileImage from "../assets/meer.jpg";
+import ProfileImage from "../assets/myPhoto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,

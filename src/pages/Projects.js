@@ -36,7 +36,7 @@ const Projects = () => {
           data-aos-delay="0"
           data-aos-duration="2000"
         >
-          <img src={imageSearch} alt="" width={330} height={200} />
+          <img src={imageSearch} alt="" />
           <div className={styles.links}>
             <a href="">
               <FontAwesomeIcon
@@ -73,10 +73,10 @@ const Projects = () => {
           className={styles.cardsContent}
           data-aos={"zoom-in-up"}
           data-aos-offset={"-5"}
-          data-aos-delay={"700"}
+          data-aos-delay={"300"}
           data-aos-duration={"2000"}
         >
-          <img src={weatherApp} alt="" width={330} height={200} />
+          <img src={weatherApp} alt="" />
           <div className={styles.links}>
             <a href="">
               <FontAwesomeIcon
@@ -113,10 +113,10 @@ const Projects = () => {
           className={styles.cardsContent}
           data-aos={"zoom-in-up"}
           data-aos-offset={"-5"}
-          data-aos-delay={"1400"}
+          data-aos-delay={"600"}
           data-aos-duration={"2000"}
         >
-          <img src={eCommerce} alt="" width={330} height={200} />
+          <img src={eCommerce} alt="" />
           <div className={styles.links}>
             <a href="">
               <FontAwesomeIcon
@@ -150,10 +150,10 @@ const Projects = () => {
           className={styles.cardsContent}
           data-aos={"zoom-in-up"}
           data-aos-offset={"-5"}
-          data-aos-delay={"2100"}
+          data-aos-delay={"900"}
           data-aos-duration={"2000"}
         >
-          <img src={tourTravel} alt="" width={330} height={200} />
+          <img src={tourTravel} alt="" />
           <div className={styles.links}>
             <a href="">
               <FontAwesomeIcon
@@ -187,11 +187,11 @@ const Projects = () => {
           whileHover={{ scale: 1.2 }}
           className={styles.cardsContent}
           data-aos={"zoom-in-up"}
-          data-aos-delay={"0"}
+          data-aos-delay={"1000"}
           data-aos-offset="-5"
           data-aos-duration={"2000"}
         >
-          <img src={restaurant} alt="" width={330} height={200} />
+          <img src={restaurant} alt="" />
           <div className={styles.links}>
             <a href="">
               <FontAwesomeIcon
